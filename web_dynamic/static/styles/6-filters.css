@@ -64,7 +64,7 @@ button:hover {
     max-height: 300px;
 }
 
-.amenities .checkbox{
+input[type="checkbox"] {
     margin-right: 10px;
 }
 
