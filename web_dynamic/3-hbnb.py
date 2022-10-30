@@ -29,7 +29,11 @@ def hello_hbnb():
     return 'Hello HBNB!'
 
 
+<<<<<<< HEAD
+@app.route('/2-hbnb/', strict_slashes=False)
+=======
 @app.route('/3-hbnb/', strict_slashes=False)
+>>>>>>> 8ce0a6a6bdf809b6dba7e6b1d899b0afe9aab1f0
 def hbnb():
     """ HBNB is alive! """
     states = storage.all(State).values()
@@ -45,7 +49,11 @@ def hbnb():
     places = storage.all(Place).values()
     places = sorted(places, key=lambda k: k.name)
 
+<<<<<<< HEAD
+    return render_template('1-hbnb.html',
+=======
     return render_template('3-hbnb.html',
+>>>>>>> 8ce0a6a6bdf809b6dba7e6b1d899b0afe9aab1f0
                            cache_id=uuid.uuid4(),
                            states=st_ct,
                            amenities=amenities,
