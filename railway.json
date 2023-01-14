@@ -2,7 +2,7 @@
   "$schema": "https://railway.app/railway.schema.json",
   "build": {
     "builder": "NIXPACKS",
-    "buildCommand": " HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python -m web_dynamic.100-hbnb"
+    "buildCommand": "python -m web_dynamic.100-hbnb"
   },
   "deploy": {
     "startCommand": "flask --app web_dynamic.100-hbnb run",
