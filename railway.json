@@ -4,10 +4,6 @@
     "builder": "NIXPACKS",
     "buildCommand": " HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python -m web_dynamic.100-hbnb"
   },
-  "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python -m api.v1.app"
-  },
   "deploy": {
     "startCommand": "flask --app web_dynamic.100-hbnb run",
     "healthcheckPath": "/100-hbnb",
